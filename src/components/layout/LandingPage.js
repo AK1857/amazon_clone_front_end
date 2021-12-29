@@ -1,6 +1,7 @@
 import React from "react";
 import NavbarContainer from "./navbar/NavbarContainer";
 import ImageSlider from "./ImageSlider";
+import HomePageProductContainer from "../homePageProduct/HomePageProductContainer";
 
 function LandingPage() {
   return (
@@ -9,6 +10,7 @@ function LandingPage() {
 
       <div className="container-fluid px-0">
         <ImageSlider />
+        <HomePageProductContainer />
       </div>
     </React.Fragment>
   );
