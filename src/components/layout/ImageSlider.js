@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ImageSlider() {
   return (
@@ -18,45 +19,45 @@ function ImageSlider() {
             />
           </div>
           <div className="carousel-item">
-            <a href="#">
+            <Link to="/">
               {" "}
               <img
                 src="assets/img/slider/slider2.jpg"
                 className="d-block w-100"
                 alt="img2"
               />
-            </a>
+            </Link>
           </div>
           <div className="carousel-item">
-            <a href="#">
+            <Link to="/">
               <img
                 src="assets/img/slider/slider3.jpg"
                 className="d-block w-100"
                 alt="img3"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="carousel-item">
-            <a href="#">
+            <Link to="/">
               {" "}
               <img
                 src="assets/img/slider/slider4.jpg"
                 className="d-block w-100"
                 alt="img3"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="carousel-item">
-            <a href="#">
+            <Link to="/">
               {" "}
               <img
                 src="assets/img/slider/slider5.jpg"
                 className="d-block w-100"
                 alt="img3"
               />
-            </a>
+            </Link>
           </div>
         </div>
         <a

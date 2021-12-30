@@ -8,13 +8,9 @@ import LoginContainer from "../login/LoginContainer";
 function LandingPage() {
   return (
     <React.Fragment>
-      <NavbarContainer />
-
       <div className="container-fluid px-0">
         <ImageSlider />
         <HomePageProductContainer />
-
-        <Footer />
       </div>
     </React.Fragment>
   );

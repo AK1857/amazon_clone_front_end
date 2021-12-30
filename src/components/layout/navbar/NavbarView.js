@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavbarView() {
   return (
@@ -41,10 +42,10 @@ function NavbarView() {
                 {" "}
                 Your Account
               </a>
-              <a href="login.html" className="btn btn-outline-warning my-2">
+              <Link to="/login" className="btn btn-outline-warning my-2">
                 {" "}
                 Sing in
-              </a>
+              </Link>
             </div>
             <div className="drawer-footer">
               <button
@@ -59,14 +60,14 @@ function NavbarView() {
           </div>
         </div>
         {/* <!--drawer ends--> */}
-        <a className="navbar-brand px-2" href="#">
+        <Link className="navbar-brand px-2" to="/">
           <img
             src="./assets/img/logo5.png"
             height="30"
             width="100"
             alt="amazon"
           />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -252,12 +253,12 @@ function NavbarView() {
               </a>
               <div className="dropdown-menu p-2" aria-labelledby="userAccount">
                 <div className="d-flex row justify-content-center">
-                  <a
-                    href="#"
+                  <Link
+                    to="/login"
                     className="btn btn-warning btn-sm font-weight-bold  w-75"
                   >
                     Sing in
-                  </a>
+                  </Link>
                   <small>
                     {" "}
                     New Customer ?{" "}
