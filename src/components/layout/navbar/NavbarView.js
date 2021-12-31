@@ -38,10 +38,10 @@ function NavbarView() {
             </div>
             <div className="drawer-body">
               <h6 className="text-muted text-uppercase"> Help & Setting</h6>
-              <a href="#" className="btn btn-outline-success sm">
+              <Link to="/register" className="btn btn-outline-success sm">
                 {" "}
                 Your Account
-              </a>
+              </Link>
               <Link to="/login" className="btn btn-outline-warning my-2">
                 {" "}
                 Sing in
@@ -262,9 +262,9 @@ function NavbarView() {
                   <small>
                     {" "}
                     New Customer ?{" "}
-                    <a href="#" className="text-info">
+                    <Link to="/register" className="text-info">
                       Start here
-                    </a>
+                    </Link>
                   </small>
                 </div>
               </div>

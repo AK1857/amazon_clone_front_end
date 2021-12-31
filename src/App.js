@@ -10,6 +10,7 @@ import LandingPage from "./components/layout/LandingPage";
 import NavbarContainer from "./components/layout/navbar/NavbarContainer";
 import LoginContainer from "./components/login/LoginContainer";
 import Footer from "./components/layout/Footer";
+import RegisterContainer from "./components/register/RegisterContainer";
 
 function App() {
   const Landing = () => {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/login" element={<LoginContainer />} />
+          <Route exact path="/register" element={<RegisterContainer />} />
         </Routes>
         <Footer />
       </div>
