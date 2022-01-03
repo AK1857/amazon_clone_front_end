@@ -12,6 +12,9 @@ import LoginContainer from "./components/login/LoginContainer";
 import Footer from "./components/layout/Footer";
 import RegisterContainer from "./components/register/RegisterContainer";
 
+import { Provider } from "react-redux";
+import store from "./components/redux/stores";
+
 function App() {
   const Landing = () => {
     return <LandingPage />;
@@ -21,17 +24,19 @@ function App() {
   };
 
   return (
-    <Router>
-      <div>
-        <NavbarContainer />
-        <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="/login" element={<LoginContainer />} />
-          <Route exact path="/register" element={<RegisterContainer />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div>
+          <NavbarContainer />
+          <Routes>
+            <Route exact path="/" element={<LandingPage />} />
+            <Route exact path="/login" element={<LoginContainer />} />
+            <Route exact path="/register" element={<RegisterContainer />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
