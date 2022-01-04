@@ -20,7 +20,7 @@ function NavbarView() {
 
         <div
           className="drawer drawer-left slide"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="drawer-1-title"
           aria-hidden="true"
