@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import RegisterView from "./RegisterView";
+import { registerRequest } from "./../redux/actions/registerActions";
 
+import {} from "react-router-dom";
+import { connect } from "react-redux";
+import { submitAction } from "./../redux/actions/registerActions";
+// import { withRouter } from "react-router-dom";
+
+// import { withRouter } from "react-router";
 class RegisterContainer extends Component {
   constructor(props) {
     super(props);
@@ -24,9 +31,21 @@ class RegisterContainer extends Component {
 
   handalSubmit = (e) => {
     e.preventDefault();
+    const user = {
+      userName: this.state.name,
+      email: this.state.email,
+      password: this.state.password1,
+    };
+
+    this.props.registerRequest(user);
+
+    // submitAction(user);
 
     console.log(this.state);
+
+    alert("submit button clicked");
   };
+
   render() {
     return (
       <div>
@@ -40,4 +59,14 @@ class RegisterContainer extends Component {
   }
 }
 
-export default RegisterContainer;
+const mapStateToProps = (state) => ({
+  register: state.register,
+});
+
+const mapDispacthToProps = {
+  registerRequest,
+};
+
+export default connect(mapStateToProps, mapDispacthToProps)(RegisterContainer);
+//(withRouter(RegisterContainer))
+//(RegisterContainer);

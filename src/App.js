@@ -29,8 +29,8 @@ function App() {
   };
 
   return (
-    <Provider store={store}>
-      <Router>
+    <Router>
+      <Provider store={store}>
         <div>
           <NavbarContainer />
           <Routes>
@@ -46,8 +46,8 @@ function App() {
 
           <Footer />
         </div>
-      </Router>
-    </Provider>
+      </Provider>
+    </Router>
   );
 }
 

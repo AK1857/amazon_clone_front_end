@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import LoginView from "./LoginView";
+import { apiBaseurl } from "./../../utils/constant";
 
 class LoginContainer extends Component {
   constructor(props) {
@@ -24,6 +25,8 @@ class LoginContainer extends Component {
     e.preventDefault();
 
     console.log(this.state);
+    alert("email :" + this.state.email + " Password: " + this.state.password);
+    alert(`Base url is :${apiBaseurl}`);
   };
 
   render() {

@@ -21,7 +21,7 @@ export default function registerReducer(state = initialState, action) {
     case REGISTER_RESPONSE:
       return {
         ...state,
-        isLoading: true,
+        isLoading: false,
       };
     case REGISTER_ERROR:
       return {
