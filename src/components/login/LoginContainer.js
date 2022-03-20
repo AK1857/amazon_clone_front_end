@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import LoginView from "./LoginView";
 import { apiBaseurl } from "./../../utils/constant";
+import { loginRequest } from "./../redux/actions/loginActions";
+import { connect } from "react-redux";
 
 class LoginContainer extends Component {
   constructor(props) {
@@ -40,4 +42,13 @@ class LoginContainer extends Component {
   }
 }
 
-export default LoginContainer;
+const mapStateToProps = (state) => ({
+  login: state.login,
+});
+
+const mapDispacthToProps = {
+  loginRequest,
+};
+
+//export default LoginContainer;
+export default connect(mapStateToProps, mapDispacthToProps)(LoginContainer);
