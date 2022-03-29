@@ -3,6 +3,7 @@ import LoginView from "./LoginView";
 import { apiBaseurl } from "./../../utils/constant";
 import { loginRequest } from "./../redux/actions/loginActions";
 import { connect } from "react-redux";
+import store from "../redux/stores";
 
 class LoginContainer extends Component {
   constructor(props) {
@@ -26,9 +27,15 @@ class LoginContainer extends Component {
   handalSubmit = (e) => {
     e.preventDefault();
 
-    console.log(this.state);
-    alert("email :" + this.state.email + " Password: " + this.state.password);
-    alert(`Base url is :${apiBaseurl}`);
+    const userData = {
+      email: this.state.email,
+      password: this.state.password,
+    };
+
+    this.props.loginRequest(userData);
+    // console.log(this.state);
+    // alert("email :" + this.state.email + " Password: " + this.state.password);
+    // alert(`Base url is :${apiBaseurl}`);
   };
 
   render() {

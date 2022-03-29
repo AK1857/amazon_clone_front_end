@@ -11,7 +11,29 @@ import { apiBaseurl } from "../../../utils/constant";
 // Action creator for Register Request
 
 export const loginRequest = (userData) => (dispatch) => {
-  alert("clided");
+  // Dispatch login redques
+  dispatch({ type: LOGIN_REQUEST });
+  // dispatch login error clear
+  dispatch(loginErrorClear());
+
+  // login reques
+
+  axios
+    .post(`${apiBaseurl}/api/users/login`, userData)
+    .then((res) => {
+      console.log(res.data);
+      dispatch(setLoginUser(res.data.user));
+      alert("login success");
+      console.log("Login success");
+    })
+    .catch((err) => {
+      // set login error
+      dispatch(loginError(err.response.data));
+      console.log(err.response.data);
+    });
+
+  // set isLoading to false
+  dispatch(loginResponse());
 };
 
 // export const submitAction = (userData) => {

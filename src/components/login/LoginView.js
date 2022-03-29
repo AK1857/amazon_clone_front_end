@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TextFildIndput from "../common/TextFildIndput";
 
 function LoginView(props) {
+  // const { error } = props.login.message;
+  // const { error, isLoading } = props.login;
+
   return (
     // <!-- Login card started-->
 
@@ -13,65 +17,36 @@ function LoginView(props) {
         <div className="card-body">
           <h5 className="card-title">Login</h5>
           {/* <!-- Login form start--> */}
-          <form
-            className="needs-validation"
-            id="needs-validation"
-            autoComplete="off"
-            onSubmit={props.handalSubmit}
-          >
-            <div className="mb-3">
-              <label htmlFor="userEmail" className="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="email"
-                className="form-control"
-                id="userEmail"
-                placeholder="abc@gmail.com"
-                aria-describedby="emailHelp"
-                value={props.email}
-                onChange={props.handalChange}
-                required
-              />
-              <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
-              </div>
-              <div className="invalid-feedback">
-                <i className="fas fa-exclamation-triangle text-danger"></i>{" "}
-                Inter Valid Email
-              </div>
-              <div className="valid-feedback">
-                <i className="far fa-thumbs-up text-sccess"></i>Good
-              </div>
-            </div>
-            <div className="mb-3">
-              <label htmlFor="userPassword" className="form-label">
-                Password
-              </label>
-              <input
-                type="password"
-                className="form-control"
-                placeholder="******"
-                name="password"
-                id="userPassword"
-                value={props.password}
-                onChange={props.handalChange}
-                required
-              />
-              <div id="passwordHelp" className="form-text">
-                {" "}
-                <i className="fas fa-info text-primary"></i> password must be at
-                least 6 charset
-              </div>
-              <div className="invalid-feedback">
-                <i className="fas fa-exclamation-triangle text-danger"></i>{" "}
-                Password mus be 6 character
-              </div>
-              <div className="valid-feedback">
-                <i className="far fa-thumbs-up text-sccess"></i> Good
-              </div>
-            </div>
+          <form autoComplete="off" onSubmit={props.handalSubmit} required>
+            <TextFildIndput
+              type="email"
+              name="email"
+              className="form-control"
+              id="userEmail"
+              placeholder="abc@gmail.com"
+              aria-describedby="emailHelp"
+              value={props.email}
+              onChange={props.handalChange}
+              lblText="Email Id"
+              infoText=" We'll never share your email with anyone else."
+              // error={error.email}
+              required
+            />
+
+            <TextFildIndput
+              type="password"
+              className="form-control"
+              placeholder="******"
+              name="password"
+              id="userPassword"
+              value={props.password}
+              onChange={props.handalChange}
+              lblText="Password"
+              infoText="Passwod must greater then 6 character"
+              // error={error.password}
+              required
+            />
+
             <div className="mb-3 form-check">
               <input
                 type="checkbox"

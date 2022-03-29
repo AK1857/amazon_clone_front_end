@@ -40,6 +40,12 @@ class RegisterContainer extends Component {
     this.props.registerRequest(user);
 
     // submitAction(user);
+    this.setState({
+      name: "",
+      email: "",
+      password1: "",
+      password2: "",
+    });
 
     console.log(this.state);
 

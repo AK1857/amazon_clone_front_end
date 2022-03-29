@@ -24,6 +24,25 @@ hr.hr-text::before {
   color: #ffa41c;
 }
 
-*a {
+a {
   text-decoration: none;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8) url("./../img/loader.gif") center
+    no-rerpeat;
+}
+
+body.loading {
+  overflow: hidden;
+}
+body.loading.boerlay {
+  display: block;
 }
