@@ -3,7 +3,6 @@ import {
   REGISTER_RESPONSE,
   REGISTER_REQUEST,
   REGISTER_ERROR_CLEAR,
-  REG,
 } from "./../actions/types";
 
 const initialState = {
@@ -36,7 +35,6 @@ export default function registerReducer(state = initialState, action) {
         errors: {},
         isLoading: false,
       };
-      break;
 
     default:
       return state;

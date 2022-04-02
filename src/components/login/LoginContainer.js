@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import LoginView from "./LoginView";
-import { apiBaseurl } from "./../../utils/constant";
+//import { apiBaseurl } from "./../../utils/constant";
 import { loginRequest } from "./../redux/actions/loginActions";
 import { connect } from "react-redux";
-import store from "../redux/stores";
+//import store from "../redux/stores";
 
 class LoginContainer extends Component {
   constructor(props) {

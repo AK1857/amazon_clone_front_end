@@ -4,7 +4,7 @@ import { registerRequest } from "./../redux/actions/registerActions";
 
 import {} from "react-router-dom";
 import { connect } from "react-redux";
-import { submitAction } from "./../redux/actions/registerActions";
+//import { submitAction } from "./../redux/actions/registerActions";
 // import { withRouter } from "react-router-dom";
 
 // import { withRouter } from "react-router";

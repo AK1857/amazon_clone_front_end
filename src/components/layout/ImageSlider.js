@@ -61,6 +61,7 @@ function ImageSlider() {
           </div>
         </div>
         <a
+          href="/#"
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleControls"
@@ -73,6 +74,7 @@ function ImageSlider() {
           <span className="visually-hidden">Previous</span>
         </a>
         <a
+          href="/#"
           className="carousel-control-next"
           type="button"
           data-bs-target="#carouselExampleControls"

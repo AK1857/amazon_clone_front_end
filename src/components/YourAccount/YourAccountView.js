@@ -73,7 +73,7 @@ function YourAccountView() {
             </a>
           </div>
           <div className="col-md-4">
-            <a href="#" className="btn w-100">
+            <a href="/#" className="btn w-100">
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">
@@ -87,7 +87,7 @@ function YourAccountView() {
             </a>
           </div>
           <div className="col-md-4">
-            <a href="#" className="btn w-100">
+            <a href="/#" className="btn w-100">
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">

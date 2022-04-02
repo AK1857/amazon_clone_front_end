@@ -3,7 +3,6 @@ import {
   REGISTER_RESPONSE,
   REGISTER_REQUEST,
   REGISTER_ERROR_CLEAR,
-  REG,
 } from "./types";
 
 import axios from "axios";

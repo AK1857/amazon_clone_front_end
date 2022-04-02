@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import LandingPage from "./components/layout/LandingPage";
 import NavbarContainer from "./components/layout/navbar/NavbarContainer";
@@ -17,16 +12,16 @@ import { Provider } from "react-redux";
 import store from "./components/redux/stores";
 
 function App() {
-  const Landing = () => {
-    return <LandingPage />;
-  };
-  const Login = () => {
-    return <LoginContainer />;
-  };
+  // const Landing = () => {
+  //   return <LandingPage />;
+  // };
+  // const Login = () => {
+  //   return <LoginContainer />;
+  // };
 
-  const YourAccount = () => {
-    return <yourAcccountContainer />;
-  };
+  // const YourAccount = () => {
+  //   return <yourAcccountContainer />;
+  // };
 
   return (
     <Router>

@@ -8,7 +8,7 @@ function HomePageProductView() {
         <div className="row">
           <div className="col-md-3">
             <div className="card pt-3">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product003.jpg"
@@ -26,7 +26,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -36,7 +36,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card pt-3">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product005.jpg"
@@ -54,7 +54,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -64,7 +64,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card pt-3">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product003.jpg"
@@ -82,7 +82,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -92,7 +92,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card pt-3">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product004.jpg"
@@ -110,7 +110,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -124,7 +124,7 @@ function HomePageProductView() {
         <div className="row mt-3">
           <div className="col-md-3">
             <div className="card my-2 my-md-0">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product003.jpg"
@@ -142,7 +142,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -152,7 +152,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card my-2 my-md-0">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product005.jpg"
@@ -170,7 +170,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -180,7 +180,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card my-2 my-md-0">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product003.jpg"
@@ -198,7 +198,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>
@@ -208,7 +208,7 @@ function HomePageProductView() {
           </div>
           <div className="col-md-3">
             <div className="card my-2 my-md-0">
-              <a href="#">
+              <a href="/#">
                 {" "}
                 <img
                   src="assets/img/products/product004.jpg"
@@ -226,7 +226,7 @@ function HomePageProductView() {
                     </p>
                   </div>
                   <div className="col-md-6">
-                    <a href="#" className="btn btn-success btn-block">
+                    <a href="/#" className="btn btn-success btn-block">
                       Buy Now
                     </a>
                   </div>

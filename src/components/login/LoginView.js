@@ -74,10 +74,10 @@ function LoginView(props) {
             {" "}
             Create your Amazon Account{" "}
           </Link>
-          <a href="#" className="btn btn-outline-success mt-2 w-100">
+          <a href="/#" className="btn btn-outline-success mt-2 w-100">
             <i className="fab fa-google"></i> Sing in with Google
           </a>
-          <a href="#" className="btn btn-outline-primary mt-2 w-100">
+          <a href="/#" className="btn btn-outline-primary mt-2 w-100">
             <i className="fab fa-facebook-f"></i> Sing in with Facebook
           </a>
         </div>

@@ -72,7 +72,7 @@ function NavbarView() {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          data-bs-target="/#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -103,32 +103,32 @@ function NavbarView() {
                     aria-labelledby="dropdownMenuButton1"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Electronics
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Kitchen hardware
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Mobiles
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Books
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Mens ware
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/#">
                         Kids ware
                       </a>
                     </li>
@@ -156,7 +156,7 @@ function NavbarView() {
             <li className="nav-item dropdown px-2">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/#"
                 id="prefareLanguageDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -243,7 +243,7 @@ function NavbarView() {
             <li className="nav-item dropdown px-2">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/#"
                 id="userAccount"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -273,7 +273,7 @@ function NavbarView() {
 
           <!-- shoping card start--> */}
             <li className="nav-item px-2">
-              <a className="nav-link ">
+              <a href="/#" className="nav-link ">
                 <i className="fas fa-2x fa-shopping-cart text-white"></i>
                 <span className="badge bg-warning rounded-pill">7</span>
               </a>
